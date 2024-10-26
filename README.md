@@ -6,6 +6,8 @@ The project achieve this by creating every ticket as a NFT that can be traceble 
 
 ## running the project
 
+_this is a core DAPP, optional centralised backend is used only to serve smooth asset generation_
+
 ### terminal 1
 pip instal flask_cors  
 cd imageToAssetsAPI  
