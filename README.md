@@ -1,36 +1,38 @@
-## Create Aptos Dapp NFT minting dapp Template
+## Aptos Dapp NFT Ticket Platform
 
-Digital Assets are the NFT standard for Aptos. The Digital Asset template provides an end-to-end NFT minting dapp with a beautiful pre-made UI users can quickly adjust and deploy into a live server.
+The Project is a Ticket Buying/Selling platform that solves many issues in traditional web2 ticket booking platforms
+like, fake tickets, ticket reselling, blackmarketing, etc.
+The project achieve this by creating every ticket as a NFT that can be traceble by anyone in the world.
 
-## Read the NFT minting dapp template docs
-To get started with the NFT minting dapp template and learn more about the template functionality and usage, head over to the [NFT minting dapp template docs](https://learn.aptoslabs.com/en/dapp-templates/nft-minting-template) 
+## running the project
 
-## The NFT minting dapp template provides 3 pages:
+### terminal 1
+pip instal flask_cors
+cd imageToAssetsAPI
+python imageToAsset.py
 
-- **Public Mint NFT Page** - A page for the public to mint NFTs.
-- **Create Collection Page** - A page for creating new NFT collections. This page is not accessible on production.
-- **My Collections Page** - A page to view all the collections created under the current Move module (smart contract). This page is not accessible on production.
+### terminal 2
+npm install typescript
+cd UpdateEnvVariables
+tsc index.ts
+node index.ts
+npm install
 
-## What tools the template uses?
+### terminal 3
+npm install
+npm run dev
 
-- React framework
-- Vite development tool
-- shadcn/ui + tailwind for styling
-- Aptos TS SDK
-- Aptos Wallet Adapter
-- Node based Move commands
+make a .env file in root dir
 
-## What Move commands are available?
+## resources and media
 
-The tool utilizes [aptos-cli npm package](https://github.com/aptos-labs/aptos-cli) that lets us run Aptos CLI in a Node environment.
+youtube:-
+https://www.youtube.com/watch?v=YENynWC0mIw
 
-Some commands are built-in the template and can be ran as a npm script, for example:
+made by:-
+https://github.com/kairavb (Backend)
+https://github.com/AryanGupta0007 (Frontend)
 
-- `npm run move:publish` - a command to publish the Move contract
-- `npm run move:test` - a command to run Move unit tests
-- `npm run move:compile` - a command to compile the Move contract
-- `npm run move:upgrade` - a command to upgrade the Move contract
-- `npm run dev` - a command to run the frontend locally
-- `npm run deploy` - a command to deploy the dapp to Vercel
-
-For all other available CLI commands, can run `npx aptos` and see a list of all available commands.
+docs :-
+https://aptos.dev/en/build/create-aptos-dapp/templates/nft-minting-dapp
+https://aptos.dev/en/build/smart-contracts/digital-asset#using-the-digital-asset-standard
