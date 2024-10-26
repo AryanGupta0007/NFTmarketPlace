@@ -1,0 +1,11 @@
+{
+        "description": "ticket collection",
+        "image": "",
+        "name": "Ticket #443",
+        "external_url": "https://your_project_url.io/1",
+        "attributes": [
+        {
+            "trait_type": "Ticket",
+            "value": "1"
+        }]
+    }
